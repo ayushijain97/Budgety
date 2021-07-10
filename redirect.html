@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="redirect.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="heading">Login</h1>
+        <h2 class="inputHead">User Name</h2>
+        <input type="text" placeholder="Enter Name" />
+        <h2 class="inputHead">Password</h2>
+        <input type="text" placeholder="Enter Name" />
+        <button class="login_btn">Login</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function pageRedirect() {
+      window.location.replace("http://127.0.0.1:5500/");
+    }
+    document
+      .querySelector(".login_btn")
+      .addEventListener("click", pageRedirect);
+  </script>
+</html>
